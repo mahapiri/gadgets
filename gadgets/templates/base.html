@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Base HTML{% endblock %}</title>
+    <link rel="stylesheet" href="{% static '/gadget_list/style.css' %}">
+</head>
+<body>
+    {% block content %}leerer content{% endblock %}
+</body>
+</html>

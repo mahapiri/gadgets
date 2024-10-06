@@ -11,7 +11,7 @@ from django.views.generic.base import RedirectView
 
 # Create your views here.
 def init_view(request):
-    return render(request, 'gadget_list/test.html')
+    return render(request, 'gadget_list/test.html', {'gadgets': gadgets})
 
 class RedirectToGadgetView(RedirectView):
     pattern_name = "gadget_slug_url"

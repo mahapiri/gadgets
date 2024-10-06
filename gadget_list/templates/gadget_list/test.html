@@ -1,1 +1,12 @@
-test
+{% extends "base.html" %}
+
+{% block title %}gadget list{% endblock %}
+
+{% block content %}
+
+{% for gadget in gadgets %}
+<h2>
+    {{ gadget.name }}
+</h2>
+{% endfor %}
+{% endblock %}
